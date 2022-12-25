@@ -23,6 +23,9 @@ dependencies {
     runtimeOnly("com.h2database:h2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     implementation("io.github.microutils:kotlin-logging-jvm:3.0.3")
+    testImplementation("com.h2database:h2:2.1.214")
+    implementation("com.zaxxer:HikariCP:5.0.1")
+    implementation("org.springframework:spring-jdbc:6.0.0")
 }
 
 tasks.withType<KotlinCompile> {

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 class AddressDto(
 
+    @JsonProperty("id")
+    var id: Long?,
+
     @JsonProperty("street")
     var street: String,
 
@@ -23,5 +26,8 @@ class AddressDto(
     var country: String,
 
     @JsonProperty("zip_code")
-    var zipCode: String
+    var zipCode: String,
+
+    @JsonProperty("main_address")
+    var mainAddress: Boolean
 )
